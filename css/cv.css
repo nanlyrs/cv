@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(-100);
+    animation-delay: 0.5s;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+a:hover{
+    color: rgb(107, 106, 106);
+}
+
+header{
+    background-color: gainsboro;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+
+.content{
+    text-align: center;
+    padding: 20px;
+}
+
+.content{
+    text-align: center;
+}
+
+.datos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.dat{
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    border: 5px solid rgba(173, 173, 173, 0.125);
+    padding: 20px 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dat:hover{
+    transform: scale(1.1);
+}
+
+.datos a{
+    color: #191970;
+}
+
+h2{
+    text-align: center;
+}
+
+.reviews{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-content: space-between;
+    padding: 18px;;
+}
+
+.r{
+    margin-bottom: 20px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    border: 5px solid rgba(173, 173, 173, 0.125);
+    padding: 20px 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.r:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:991px){
+    .header nav a{
+        text-align: right;
+    }
+
+    .datos{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .reviews{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
